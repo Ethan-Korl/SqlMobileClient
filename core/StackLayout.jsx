@@ -8,7 +8,11 @@ const Stack = createStackNavigator();
 const StackLayout = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name='WelcomeScreen' component={WelcomeScreen} />
+      <Stack.Screen
+        options={{ headerShown: false }}
+        name='WelcomeScreen'
+        component={WelcomeScreen}
+      />
     </Stack.Navigator>
   )
 }

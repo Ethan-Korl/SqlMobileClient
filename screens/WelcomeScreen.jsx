@@ -1,14 +1,27 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import GetStarted from '../components/GetStarted'
+import GuestButton from '../components/GuestButton'
 
 const WelcomeScreen = () => {
   return (
-    <View>
+    <View style={styles.container} className='bg-black-100'>
       <Text>WelcomeScreen</Text>
+      <View>
+        <GetStarted />
+        <GuestButton />
+      </View>
     </View>
   )
 }
 
 export default WelcomeScreen
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+})
