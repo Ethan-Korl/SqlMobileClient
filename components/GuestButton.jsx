@@ -4,8 +4,8 @@ import React from 'react'
 
 const GuestButton = () => {
   return (
-    <TouchableOpacity>
-      <Text>Try as guest</Text>
+    <TouchableOpacity className="justify-center px-2 py-1 m-1 bg-pink-300 rounded-md h-9">
+      <Text className="text-xl">Try as guest</Text>
     </TouchableOpacity>
   )
 }

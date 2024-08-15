@@ -1,11 +1,13 @@
 
 import { StyleSheet, Text, View, Pressable, TouchableOpacity } from 'react-native'
 import React from 'react'
+import { useNavigation } from '@react-navigation/native';
 
-const GetStarted = () => {
+const GetStarted = (props) => {
+  const navigation = useNavigation()
   return (
-    <TouchableOpacity onPress={() => alert("jsj")}>
-      <Text>Get Started</Text>
+    <TouchableOpacity className="justify-center px-2 py-1 m-1 bg-pink-300 rounded-md h-9" onPress={() => navigation.navigate("HomeScreen")}>
+      <Text className="text-xl">Get Started</Text>
     </TouchableOpacity>
   )
 }

@@ -5,10 +5,10 @@ import GuestButton from '../components/GuestButton'
 
 const WelcomeScreen = () => {
   return (
-    <View style={styles.container} className='bg-black-100'>
+    <View style={styles.container} className='border-y-orange-100'>
       <Text>WelcomeScreen</Text>
-      <View>
-        <GetStarted />
+      <View className="flex-row">
+        <GetStarted  />
         <GuestButton />
       </View>
     </View>
@@ -20,7 +20,7 @@ export default WelcomeScreen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    // backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   }
